@@ -8,8 +8,7 @@ import {MatTableDataSource} from '@angular/material/table';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  students: string[];
-
+  students: {name: string, lastname: string, status: string, id: number}[];
 
   constructor() {
     this.students = [
